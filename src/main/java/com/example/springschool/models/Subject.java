@@ -3,6 +3,7 @@ package com.example.springschool.models;
 import javax.persistence.*;
 
 @Entity
+@Table(name="subjects")
 public class Subject {
 
     @Id
