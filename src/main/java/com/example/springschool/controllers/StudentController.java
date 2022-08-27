@@ -20,7 +20,7 @@ public class StudentController {
     @GetMapping("/students")
     public String showStudents(Model model){
         model.addAttribute("students",studentDao.findAll());
-        return "/index";
+        return "student/index";
     }
 
     @GetMapping("/student/create")
