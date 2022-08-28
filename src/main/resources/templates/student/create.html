@@ -7,20 +7,9 @@
     <h1>Create Player Page</h1>
     <div class="row">
         <div class="col-12">
-            <form th:action="@{/player/create}" th:method="post" th:object="${player}">
-                <label class="form-label">username:</label>
-                <input class="form-control" th:field="*{username}" />
-                <label class="form-label">password:</label>
-                <input class="form-control" th:field="*{password}" />
-                <label class="form-label">email:</label>
-                <input class="form-control" th:field="*{email}" />
-                <label class="form-label">First Name:</label>
-                <input class="form-control" th:field="*{firstName}" />
-                <label class="form-label">Last Name:</label>
-                <input class="form-control" th:field="*{lastName}" />
-
-
-
+            <form th:action="@{/student/create}" th:method="post" th:object="${student}">
+                <label for="name">name:</label>
+                <input type="text" id="name" th:field="*{name}">
                 <input type="submit" />
             </form>
 
