@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragment/partials :: head('comment index')">
+    <title>default</title>
+</head>
+<body>
+<h1 class="text-center">Hello, comment</h1>
+<div th:each="report: ${reports}">
+    <p>Score: <span th:text="${report.grade}"></span></p>
+    <p>Comment: <span th:text="${report.comment}"></span></p>
+</div>
+
+
+
+
+
+</body>
+</html>
