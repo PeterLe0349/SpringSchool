@@ -5,6 +5,9 @@
 </head>
 <body>
 <h1 class="text-center">Hello, comment</h1>
+<div th:each="comment: ${comments}">
+    <p>Phrase: <span th:text="${comment.description}"></span></p>
+</div>
 
 
 
