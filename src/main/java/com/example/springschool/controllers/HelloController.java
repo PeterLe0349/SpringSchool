@@ -12,7 +12,7 @@ public class HelloController {
     @GetMapping("/")
     public String welcome(Model model){
         model.addAttribute("message", "TH Message.");
-        model.addAttribute("student", new Student("Peter"));
+        model.addAttribute("student", new Student("Petrus Pedro"));
         return "index";
     }
 }
